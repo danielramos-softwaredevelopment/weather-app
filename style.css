@@ -1,70 +1,130 @@
-body{
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+/* ===== General Layout ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #e0f7ff, #a8d8ff);
+  color: #1a1a1a;
 }
 
-.weather-app{
-    background-color: rgb(0, 179, 255);
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+/* ===== Main App Container ===== */
+.weather-app {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 420px;
+  transition: transform 0.3s ease;
 }
 
-.hidden{
-    display: none;
+.weather-app:hover {
+  transform: translateY(-3px);
 }
 
-.forecast-container{
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-    margin-top: 1rem;
+/* ===== Input and Buttons ===== */
+input {
+  padding: 0.6rem 1rem;
+  width: 70%;
+  border: 1px solid #c5e4ff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  background: #f8fbff;
+  color: #333;
+  box-shadow: 0 0 4px rgba(0, 140, 255, 0.15);
+  transition: all 0.2s ease;
 }
 
-.forecast-day{
-    text-align: center;
-    min-width: 80px;
-    background: #f0f0f0;
-    padding: 0.5rem;
-    border-radius: 7px;
+input:focus {
+  border-color: #66aaff;
+  box-shadow: 0 0 6px rgba(0, 140, 255, 0.25);
 }
 
-.forecast-day img{
-    width: 60px;
-    height: 60px;
-    margin: 0.25rem 0;
+button {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #66b3ff, #3399ff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  transition: background 0.3s, transform 0.2s;
 }
 
-#weather-icon{
-    width: 80px;
-    margin-top: 10px;
+button:hover {
+  background: linear-gradient(135deg, #559ef2, #2a8af7);
+  transform: scale(1.05);
 }
 
-input{
-    padding: 0.5rem;
-    width: 200px;
-    margin-right: 0.5rem;
-    border-radius: 7px;
-    border: 1px solid #ccc;
+/* ===== Weather Display ===== */
+.weather-result {
+  margin-top: 1.5rem;
 }
 
-button{
-    padding: 0.5rem 1rem;
-    border-radius: 7px;
-    border: none;
-    background-color: #3487db;
-    color: white;
-    cursor: pointer;
+#weather-icon {
+  width: 90px;
+  margin-top: 10px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-button:hover{
-    background-color: #2967b9;
+h2 {
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+  color: #0056b3;
 }
 
-.weather-result{
-    margin-top: 1rem;
+p {
+  margin: 0.2rem 0;
+  color: #333;
+}
+
+/* ===== Forecast Section ===== */
+.forecast-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  margin-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.forecast-day {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #d1eaff;
+  border-radius: 10px;
+  padding: 0.75rem;
+  min-width: 90px;
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+.forecast-day:hover {
+  transform: translateY(-5px);
+}
+
+.forecast-day img {
+  width: 60px;
+  height: 60px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  .weather-app {
+    padding: 1.5rem;
+  }
+
+  input {
+    width: 65%;
+  }
+
+  .forecast-container {
+    gap: 0.75rem;
+  }
 }
