@@ -72,17 +72,5 @@ open index.html
 
 ---
 
-<h2>API Setup</h2>
-
-<ol>
-  <li>Get a free API key from <a href="https://openweathermap.org/api" target="_blank">OpenWeather</a>.</li>
-  <li>Open <code>script.js</code> in your project.</li>
-  <li>Replace the placeholder with your actual API key:</li>
-</ol>
-
-const apiKey = "YOUR_API_KEY_HERE";
-
----
-
-<h2>🧑‍💻 Author</h2> <p> <strong>Daniel Ramos</strong> <a href="https://github.com/danielramos-softwaredevelopment" target="_blank"> GitHub Profile </a> </p>
-<h2>🪪 License</h2> <p> This project is open source and available under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>. </p>
+<h2>Author</h2> <p> <strong>Daniel Ramos</strong> <a href="https://github.com/danielramos-softwaredevelopment" target="_blank"> GitHub Profile </a> </p>
+<h2>License</h2> <p> This project is open source and available under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>. </p>
