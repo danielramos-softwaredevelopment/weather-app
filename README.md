@@ -1,15 +1,5 @@
 <h1 align="center">Weather App</h1>
 
-<h2>🌐 Live Demo</h2>
-
-<p align="center">
-  <a href="https://danielramos-softwaredevelopment.github.io/weather-app/" target="_blank">
-    <strong>Try the app live here!</strong>
-  </a>
-</p>
-
----
-
 <p align="center">
   A sleek and modern weather web app that provides real-time weather and a 5-day forecast for any city.
 </p>
